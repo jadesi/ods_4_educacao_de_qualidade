@@ -24,44 +24,46 @@
     
             <div>
                 <nav class="header-links">
-                    <a href="#">O que é?</a>
-                    <a href="#">Metas</a>
-                    <a href="#">Projetos</a>
-                    <a href="#">Referências</a>
+                    <ul>
+                        <li><a href="#sobre">O que é?</a></li>
+                        <li><a href="#metas">Metas</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#referencias">Referências</a></li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </header>
 
-    <main class="container">
+    <main class="">
 
         <section class="header-hero">
-            <div class="infos">
+            <div class="infos container">
                 <p>Objetivo de Desenvolvimento Sustentável</p>
                 <h1>4 Educação de qualidade</h1>
                 <p>Garantir o acesso à educação inclusiva, de qualidade e equitativa, e promover oportunidades de aprendizagem ao longo da vida para todos.</p>
             </div>
         </section>
 
-        <section class="sobre">
+        <section class="sobre container">
             <div class="infos-video">
-                <h1>O que é?</h1>                
+                <h1 id="sobre">O que é?</h1>                
                 <p>Em 2015, a Organização das Nações Unidas desenvolveu uma série de objetivos globais (ODS) para tornar o mundo mais justo, sustentável e livre de desigualdades.</p>
                 <p>A iniciativa, chamada de Pacto Global, envolve todos os 193 países-membros da ONU para que as mudanças alcancem todas as pessoas possíveis.</p>
                 <p>Foram definidos 17 Objetivos para o Desenvolvimento Sustentável, ao passo que cada um deles conta com metas específicas a serem cumpridas até 2030. O <strong>ODS 4</strong>, inclusive, diz respeito à educação inclusiva e de qualidade.</p>
-                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/htHKxLMIWrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <p>A ideia é de <strong>assegurar oportunidades iguais de aprendizagem ao longo da vida de todos e todas</strong>. Isso inclui equidade de acesso ao ensino pré-escolar, primário, secundário, técnico profissionalizante e universitário.</p>
                 <p>O ODS 4 também pretende eliminar as <strong>disparidades de gênero na educação</strong>, além de garantir <strong>instalações físicas para as pessoas com deficiência (PcDs)</strong>.</p>
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/htHKxLMIWrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </section>
 
         <section class="metas">
-            <div class="metas-infos">
-                <h2>Metas da onu para alcançar o ods 4</h2>
+            <div class="metas-infos container">
+                <h2 id="metas">Metas da onu para alcançar o ods 4</h2>
                 <p>A ONU definiu metas específicas para atingir o ODS 4,que visa “assegurar a educação inclusiva e equitativa de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos”. Olha só:</p>
             </div>
 
-            <div class="metas-sanfona">
+            <div class="metas-sanfona container">
                 <details>
                     <summary>Meta 4.1</summary>
                     <p>Até 2030, garantir que todas as meninas e meninos completem o ensino primário e secundário livre, equitativo e de qualidade, que conduza a resultados de aprendizagem relevantes e eficazes</p>
@@ -114,67 +116,81 @@
             </div>
         </section>
 
-        <section class="projetos">
+        <h2 id="projetos" class="titulo-projetos">Projetos desenvolvidos pelo Brasil</br>para alcançarmos o ODS 4</h2>
+
+        <section class="projetos container">
             <div class="card">
-                <img src="" alt="">
-                <p></p>
-                <a href="#"></a>
+                <img src="./assets/img card 1.png" alt="">
+                <p>Veja o andamento dos projetos no estado de São Paulo</p>
+                <a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/governo/planejamento/agenda_2030/" target="_blank">Saiba mais</a>
             </div>
 
             <div class="card">
-                <img src="" alt="">
-                <p></p>
-                <a href="#"></a>
+                <img src="./assets/img card 2.png" alt="">
+                <p>ODS já marcam presença em escolas no Brasil e no mundo</p>
+                <a href="https://porvir.org/ods-ja-marcam-presenca-em-escolas-no-brasil-e-no-mundo/" target="_blank">Saiba mais</a>
             </div>
 
             <div class="card">
-                <img src="" alt="">
-                <p></p>
-                <a href="#"></a>
+                <img src="./assets/img card 3.png" alt="">
+                <p>Protocolo de intenções para ODS de todos os municípios de São Paulo</p>
+                <a href="https://www.saopaulo.sp.gov.br/ultimas-noticias/governo-de-sao-paulo-assina-protocolo-de-intencoes-para-desenvolvimento-sustentavel-de-todos-os-municipios-do-estado/#:~:text=O%20Estado%20de%20S%C3%A3o%20Paulo,Plurianuais%20(PPA)%20aos%20ODS." target="_blank">Saiba mais</a>
             </div>
 
             <div class="card">
-                <img src="" alt="">
-                <p></p>
-                <a href="#"></a>
+                <img src="./assets/img card 4.png" alt="">
+                <p>Indicadores Brasileiros para os ODS</p>
+                <a href="https://odsbrasil.gov.br/objetivo/objetivo?n=4" class="cta-card" target="_blank">Saiba mais</a>
             </div>
         </section>
 
-        <section>
-            <h2></h2>
-            <a href=""></a>
+        <section class="call-to-action">
+            <div>
+                <h2>Saiba mais sobre esta e os demais Objetivos</br>de Desenvolvimento Sustentável no Brasil</h2>
+            </div>
+
+            <div class="link-cta">
+                <a href="https://brasil.un.org/pt-br/sdgs" target="_blank">Quero saber mais</a>
+            </div>
         </section>
 
         <section class="referencias">
-            <h2>Referências</h2>
-            <a href=""></a>
+            <div class="links-refs container">
+                <h2 id="referencias">Referências</h2>
+                <p><a href="https://www.prefeitura.sp.gov.br/cidade/secretarias/governo/planejamento/agenda_2030/" target="_blank">Prefeitura de São Paulo</a></p>
+                <p><a href="https://conectabrasil.org/#/blogs/details/ods-4-educacao-de-qualidade" target="_blank">Conecta Brasil</a></p>
+                <p><a href="https://www.ipea.gov.br/ods/ods4.html" target="_blank">Ipea</a></p>
+                <p><a href="https://www.saopaulo.sp.gov.br/spnoticias/estado-de-sao-paulo-avanca-em-agenda-internacional-de-sustentabilidade/" target="_blank">Governo de São Paulo</a></p>
+                <p><a href="https://brasil.un.org/pt-br/sdgs/4" target="_blank">Nações Unidas Brasil</a></p>
+                <p><a href="https://www.internacional.df.gov.br/agenda-2030-objetivos-do-desenvolvimento-sustentavel/" target="_blank">Secretaria de Relações Internacionais</a></p>
+            </div>
         </section>
     </main>
 
-    <footer class="container">
-        <div>
+    <footer class="">
+        <div class="contato container">
             <p>Desenvolvido por Jade Simões</p>
             <p>Todos os direitos reservados © 2023</p>
-            <a href="#">
-                <img src="./assets/instagram.png" alt="logo do instagram">
+            <a href="https://www.instagram.com/jadesidesign/" target="_blank">
+                <img class="social" src="./assets/instagram branco.png" alt="logo do instagram">
             </a>
 
-            <a href="#">
-                <img src="./assets/linkedin.png" alt="logo do linkedin">
+            <a href="https://www.linkedin.com/in/jade-simoes/">
+                <img class="social" src="./assets/linkedin branco.png" alt="logo do linkedin">
             </a>
 
-            <a href="#">
-                <img src="./assets/github.png" alt="logo do github">
+            <a href="https://github.com/jadesi">
+                <img class="social" src="./assets/github.png" alt="logo do github">
             </a>
         </div>
 
-        <div>
-            <a href="#">
-                <img src="./assets/logo ElasNaTech.svg" alt="logo ElasNaTech">
+        <div class="container parceiros">
+            <a href="https://jabrasil.org.br/elasnatech23/" target="_blank">
+                <img class="logo-parceiro" src="./assets/logo ElasNaTech novo.png" alt="logo ElasNaTech">
             </a>
 
-            <a href="#">
-                <img src="./assets/logo JA.png" alt="logo JA Brasil">
+            <a href="https://www.jabrasil.org.br/" target="_blank">
+                <img class="logo-parceiro" src="./assets/logo JA novo.png" alt="logo JA Brasil">
             </a>
         </div>
     </footer>

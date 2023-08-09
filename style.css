@@ -17,8 +17,6 @@
     width: 100%;
     max-width: 1120px;
     margin: 0 160px 0 160px;
-
-    border: solid 2px black;
 }
 
 body {
@@ -28,40 +26,29 @@ body {
 
 header {
     background-color: var(--contrast-color-100);
-    padding: 15px 0 15px 0;   
-
-
+    padding: 15px 0 15px 0;
 }
 
 .header-menu {
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    border: 3px solid rgb(255, 255, 255);
 }
 
 .header-logo {
-    width: 50%;
-    border: solid 2px yellow;
-
+    display: inline;
+    width: 500px;
 }
 
 .header-logo img{
-    max-width: 20%;
-    border: solid 2px blue;
+    max-width: 30%;
 }
 
-.header-links{
+.header-links ul{
     display: flex;
     flex-direction: row;
     margin-left: 200px;
+    list-style-type: none;
     gap: 20px;
-    justify-content: center;
-    align-items: center;
-    
-    border: solid 2px green;
-
 }
 
 .header-links a{
@@ -77,11 +64,11 @@ header {
     background-color: var(--contrast-color-200);
     background-image: url(./assets/img\ hero.png);
     background-repeat: no-repeat;
-    background-position: 520px;
+    background-position: right;
 }
 
 .infos {
-    width: 520px;
+    width: 600px;
     color: var(--color-white);
     padding: 80px 20px;
     text-align: left;
@@ -97,7 +84,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 .infos-video {
@@ -105,7 +92,6 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: solid 2px blue;
 }
 
 .infos-video h1{
@@ -120,7 +106,7 @@ header {
 }
 
 .video {
-    background-color: var(--contrast-color-400);
+    background-color: var(--contrast-color-200);
     padding: 05px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -128,20 +114,28 @@ header {
 
 .metas {
     height: 600px;
+    padding-left: 20px;
     background-color: var(--contrast-color-300);
     background-image: url(./assets/img\ banner.png);
     background-repeat: no-repeat;
-    background-position: 520px;
-
-    padding: 30px 0;
+    background-position: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .metas-infos {
     width: 520px;
     margin-bottom: 15px;
+}
 
+.metas-infos h2 {
+    color: var(--color-white);
+    padding-bottom: 20px;
+}
 
-    border: 2px solid white;
+.metas-infos p{
+    color: var(--color-white);
 }
 
 .metas-sanfona {
@@ -154,18 +148,161 @@ header {
 
 .metas-sanfona details summary{
     padding: 4px;
-    width: 510px;
+    width: 490px;
     font-weight: 700;
     background-color: var(--color-white);
     border: none;
-    /* box-shadow: 1px 1px 2px #646464; */
+    color: var(--contrast-color-100);
 }
 
 .metas-sanfona details p{
     background-color: #ffffff;
-    width: 510px;
+    width: 490px;
     padding: 10px;
     margin: 0;
-    /* box-shadow: 1px 1px 2px #bbbbbb; */
+    color: var(--color-black);
 }
+
+.titulo-projetos {
+    text-align: center;
+    font-weight: 700;
+    color: var(--contrast-color-100);
+    margin: 50px 0;
+}
+
+.projetos {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+    color: var(--color-white);
+    width: 240px;
+    height: 320px;
+    padding: 20px;
+    background-color: var(--contrast-color-300);
+    border-radius: 15px;
+}
+
+.card img{
+    border-radius: 10px;
+}
+
+.card a{
+    display: inline;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: var(--contrast-color-100);
+    border-radius: 10px;
+}
+
+.card a:hover {
+    background-color: var(--contrast-color-400);
+    transition: all .3s;
+}
+
+.card:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.call-to-action {
+    text-align: center;
+    font-weight: 700;
+    color: var(--contrast-color-100);
+    margin: 70px 0;
+}
+
+.call-to-action a{
+    display: inline;
+    color: var(--color-white);
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px;
+    background-color: var(--contrast-color-100);
+    border-radius: 10px;
+}
+
+.call-to-action a:hover {
+    background-color: var(--contrast-color-400);
+    transition: all .3s;
+}
+
+.link-cta {
+    margin-top: 20px;
+}
+
+.referencias {
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: var(--contrast-color-400);
+    background-image: url(./assets/img\ ref.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.referencias .links-refs {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.links-refs h2{
+    color: var(--color-white);
+    margin-bottom: 10px;
+}
+
+.links-refs a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+.links-refs a:hover{
+    color: var(--contrast-color-100);
+}
+
+footer {
+    background-color: var(--contrast-color-100);
+    display: flex;
+    align-items: center;
+}
+
+.contato {
+    color: var(--color-white);
+    padding: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+
+footer .social {
+    width: 10%;
+    text-decoration: none;  
+}
+
+footer .parceiros{
+    display: flex;
+    color: var(--color-white);
+    text-align: left;
+}
+
+.logo-parceiro {
+    width: 80%;
+}
+
+
+
 
