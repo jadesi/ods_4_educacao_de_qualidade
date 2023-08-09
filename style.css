@@ -13,11 +13,11 @@
     --color-black: #1E1E1E;
 }
 
-.container {
+/* .container {
     width: 100%;
     max-width: 1120px;
     margin: 0 160px 0 160px;
-}
+} */
 
 body {
     font-family: 'Inter', sans-serif;
@@ -174,12 +174,14 @@ header {
     display: flex;
     gap: 20px;
     justify-content: center;
+    align-content: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
     justify-content: end;
+    align-content: center;
     gap: 20px;
     color: var(--color-white);
     width: 240px;
